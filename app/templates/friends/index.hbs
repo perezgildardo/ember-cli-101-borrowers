@@ -1,5 +1,9 @@
+<h1>Friends Index</h1>
+{{! The content here is a controller}}
+<h2>Total friends: {{model.length}} </h2>
+
 <ul>
   {{#each friend in model}}
-    <li>{{friend.firstName}} {{friend.lastName}}</li>
+    <li>{{friend.id}} - {{friend.firstName}} {{friend.lastName}}</li>
   {{/each}}
 </ul>
