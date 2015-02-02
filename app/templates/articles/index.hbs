@@ -4,11 +4,16 @@
       <th>Description</th>
       <th>Notes</th>
       <th>Borrowed since</th>
-      <th>Status</th>
+      <th>
+        <label>
+          <span>Show returned?</span>
+          {{input type="checkbox" checked=showReturned}}
+        </label>
+      </th>
     </tr>
   </thead>
   <tbody>
-    {{#each itemController='articles/item'}}
+    {{#each filteredResults itemController='articles/item'}}
       <tr>
         <td>{{model.description}}</td>
         <td>{{model.notes}}</td>
