@@ -41,7 +41,7 @@ test('Clicking save without filling fields', function() {
 
   andThen(function() {
     equal(
-      currentRoutName(),
+      currentRouteName(),
       'friends.new',
       'Stays on new page'
     );
@@ -50,5 +50,5 @@ test('Clicking save without filling fields', function() {
       1,
       "Displays error message"
     );
-  }):
+  });
 });
